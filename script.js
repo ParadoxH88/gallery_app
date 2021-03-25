@@ -57,6 +57,7 @@ $('#back').click (()  => {
     loadImage(currentPhoto);
 });
 
-$('.smallpic').click(() => {
-    $('#picture').attr('src', imagesData[ind].photo);
-});
+$('#thumbnails').on('click', '.smallpic', function () {
+    let smallsrc= $(this).attr('src');
+    ($(#picture).attr('src', $smallsrc));
+  });
