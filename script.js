@@ -58,6 +58,6 @@ $('#back').click (()  => {
 });
 
 $('#thumbnails').on('click', '.smallpic', function () {
-    let smallsrc= $(this).attr('src');
-    ($(#picture).attr('src', $smallsrc));
+    // let smallsrc= $(this).attr('src');
+    $('#picture').attr('src',$(this).attr('src').replace('smallpic','photo'));
   });
