@@ -48,16 +48,29 @@ let loadImage = (ind) => {
 }
 
 $('#forward').click(() => {
-    currentPhoto++;
-    loadImage(currentPhoto);
+    if (currentPhoto < imagesData.length - 1) {
+        currentPhoto++;
+        loadImage(currentPhoto);
+    }
+    else {
+        currentPhoto = 0;
+        loadImage(currentPhoto);
+    }
 });
 
 $('#back').click (()  => {
-    currentPhoto--;
-    loadImage(currentPhoto);
+    if (currentPhoto >= 0) {
+        currentPhoto--;
+        loadImage(currentPhoto);
+    }
+    else {
+        currentPhoto = 7;
+        loadImage(currentPhoto);
+    }
 });
 
 $('#thumbnails').on('click', '.smallpic', function () {
     // let smallsrc= $(this).attr('src');
     $('#picture').attr('src',$(this).attr('src').replace('smallpic','photo'));
+    $(this).css('')
   });
