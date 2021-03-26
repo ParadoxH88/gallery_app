@@ -37,7 +37,7 @@
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' 
                 },
  
-    ]
+    ];
 
 let currentPhoto = 0;
 
