@@ -72,5 +72,20 @@ $('#back').click (()  => {
 $('#thumbnails').on('click', '.smallpic', function () {
     // let smallsrc= $(this).attr('src');
     $('#picture').attr('src',$(this).attr('src').replace('smallpic','photo'));
-    $(this).css('')
+    // $(this).css('')
   });
+
+//   $('.smallpic').click(() => {
+//     $('.smallpic').not(this).removeClass('active');
+//     $(this).addClass('active');
+// });​
+
+let smallLoadImage = (ind) => {
+    $('.smallpic').attr('src', imagesData[ind].photo);
+    // $('#phototitle').text(imagesData[ind].title);
+    // $('#descript').text(imagesData[ind].description);
+}
+
+$('#thumbnails').on('click', '.smallpic', function () {
+    smallLoadImage($(this).css('border', '3px solid white'));
+ });
