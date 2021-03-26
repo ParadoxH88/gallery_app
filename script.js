@@ -17,7 +17,7 @@
 
         {
             photo: './img/4.jpg',
-            title: 'Elso, de nem utolso.',
+            title: 'Center.',
             description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.' 
                 },
         {
@@ -88,4 +88,11 @@ let smallLoadImage = (ind) => {
 
 $('#thumbnails').on('click', '.smallpic', function () {
     smallLoadImage($(this).css('border', '3px solid white'));
+
  });
+
+
+ $('#thumbnails').hover(function(){
+    $('#textbox').css('visbility', '');
+    $('#textbox').css('visbility', 'visible');
+});
