@@ -142,7 +142,7 @@ h1::selection {
   box-shadow: -1px 1px 27px 1px rgba(255, 255, 255, 0.856);
   border-radius: 5px;
   filter: brightness(120%);
-  transition-duration: 0.1s;
+  transition-duration: 0.3s;
 }
 
 #textbox {
@@ -159,5 +159,6 @@ h1::selection {
   font-family: "Josefin Sans", sans-serif;
   color: rgba(255, 255, 255, 0.698);
   background-color: rgba(0, 0, 0, 0.205);
-  visibility: hidden;
+  display: none;
+  border-radius: 5px;
 }
